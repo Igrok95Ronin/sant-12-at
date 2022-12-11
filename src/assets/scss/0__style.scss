@@ -1,0 +1,65 @@
+@font-face {
+    font-family: 'icomoon';
+    src:  url('../fonts/icomoon.eot?w23o8q');
+    src:  url('../fonts/icomoon.eot?w23o8q#iefix') format('embedded-opentype'),
+      url('../fonts/icomoon.ttf?w23o8q') format('truetype'),
+      url('../fonts/icomoon.woff?w23o8q') format('woff'),
+      url('../fonts/icomoon.svg?w23o8q#icomoon') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: block;
+  }
+  
+  [class^="icon-"], [class*=" icon-"] {
+    /* use !important to prevent issues with browser extensions that change fonts */
+    font-family: 'icomoon' !important;
+    speak: never;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+  
+    /* Better Font Rendering =========== */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+  
+  .icon-phone:before {
+    content: "\e942";
+  }
+  
+
+* {
+    box-sizing: border-box;
+}
+a{
+    text-decoration: none;
+    display: inline-block;
+}
+ul,
+li{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+h1,h2,p {
+    margin: 0;
+    padding: 0;
+}
+.container {
+    max-width: 1194px;
+    margin: 0 auto;
+}
+body{
+    margin: auto;
+    padding: 0;
+    font: 15px Helvetica,Arial,sans-serif;
+    max-width: 1920px;
+    min-width: 320px;
+    color: #222222;
+}
+
+//vars
+$bgColor : #FFC500;
+$bgColor2 : #1D3A72;

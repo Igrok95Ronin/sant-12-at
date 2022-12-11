@@ -1,0 +1,66 @@
+.header {
+    color: #fff;
+}
+.header__box {
+    background: url(../img/Klempner_Installateur_Regensburg_HERO_9.jpg);
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-size: 1395px auto;
+    padding: 110px 30px;
+}
+.header__wrapper{
+    padding: 30px;
+}
+.header__dscr {
+    font-size: 17px;
+    font-weight: 400;
+    text-transform: uppercase;
+    font-style: normal;
+    letter-spacing: 1px;
+}
+.header__title {
+    font-size: 50px;
+    font-weight: 700;
+    line-height: 1em;
+    width: 500px;
+    margin: 20px 0;
+    span{
+        color: $bgColor;
+    }
+}
+.header__txt {
+    font-size: 30px;
+    font-weight: 400;
+    line-height: 1.1em;
+    margin-bottom: 30px;
+    span{
+        font-weight: 700;
+    }
+}
+.header__btn {
+    color: #000;
+    background-color: $bgColor;
+    font-size: 24px;
+    font-weight: 600;
+    letter-spacing: 0px;
+    padding: 10px 20px 10px 50px;
+    border-radius: 5px;
+    transition: .3s;
+    span{
+        position: relative;
+        &::before {
+            font-family: 'icomoon';
+            content: "\e942";
+            position: absolute;
+            width: 16px;
+            height: 16px;
+            top: 35%;
+            transform: translateY(-50%);
+            left: -30px;
+        }
+    }
+    &:hover {
+        color: #000;
+        background-color: #ffffff;
+    }
+}
