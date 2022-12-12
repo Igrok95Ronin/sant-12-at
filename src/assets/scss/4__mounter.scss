@@ -1,0 +1,83 @@
+.mounter {
+    padding-top: 50px;
+}
+.mounter__box {
+}
+.mounter__title {
+    @include title;
+}
+.mounter__txt {
+    margin-bottom: 15px;
+    line-height: 20px;
+    span{
+        font-weight: 700;
+    }
+}
+.mounter__wrapper {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 30px;
+    padding-top: 40px;
+}
+.mounter__inner {
+    .mounter__neame {
+        font-size: 22px;
+        font-weight: 600;
+        line-height: 28px;
+        color: #fff;
+        background-color: $bgColor2;
+        padding: 20px 20px 20px 30px;
+        position: relative;
+        padding-left: 90px;
+        &::before {
+            content: '';
+            position: absolute;
+            background: url(../img/1.png);
+            width: 40px;
+            height: 40px;
+            background-size: cover;
+            left: 20px;
+            top: 50%;
+            transform: translateY(-50%);
+        }
+    }
+}
+.mounter__inner:nth-child(2){
+    .mounter__neame{
+        &::before {
+            background: url(../img/2.png);
+            background-size: cover;
+        }
+    }
+}
+.mounter__inner:nth-child(3){
+    .mounter__neame{
+        &::before {
+            background: url(../img/3.png);
+            background-size: cover;
+        }
+    }
+}
+.mounter__inner:nth-child(4){
+    .mounter__neame{
+        &::before {
+            background: url(../img/4.png);
+            background-size: cover;
+        }
+    }
+}
+
+.mounter__ul {
+    background-color: $bgColor;
+    padding: 20px 20px 30px 30px;
+}
+.mounter__li {
+    line-height: 25px;
+    position: relative;
+    padding-left: 20px;
+    &::before {
+        content: '✔';
+        position: absolute;
+        left: 0;
+    }
+}

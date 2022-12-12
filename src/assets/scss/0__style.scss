@@ -25,8 +25,20 @@
     -moz-osx-font-smoothing: grayscale;
   }
   
+  .icon-bake:before {
+    content: "\e901";
+  }
   .icon-phone:before {
     content: "\e942";
+  }
+  .icon-user:before {
+    content: "\e903";
+  }
+  .icon-tools:before {
+    content: "\e902";
+  }
+  .icon-plumbing:before {
+    content: "\e900";
   }
   
 
@@ -67,3 +79,12 @@ body{
 //vars
 $bgColor : #FFC500;
 $bgColor2 : #1D3A72;
+
+//mixin
+@mixin title {
+  font-size: 38px;
+  padding: 30px 0 10px;
+  color: $bgColor2;
+  border-bottom: 1px solid #D3D3D3;
+  margin-bottom: 20px;
+}
