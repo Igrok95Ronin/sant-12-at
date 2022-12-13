@@ -1,0 +1,62 @@
+.dailyServices {
+    padding-top: $paddingTop;
+    padding-bottom: 50px;
+}
+.dailyServices__box {
+}
+.dailyServices__title {
+    @include title;
+}
+.dailyServices__txt {
+    line-height: 24px;
+    margin-bottom: 40px;
+}
+.dailyServices__wrapper {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 30px;
+}
+.dailyServices__inner {
+
+}
+.dailyServices__img {
+    max-width: 100%;
+    border-radius: 5px 5px 0 0;
+}
+.dailyServices__inInner {
+    border-top: 6px solid $bgColor;
+    background-color: #e3e3e3;
+    border-radius:  0 0 5px 5px;
+    padding: 20px;
+    min-height: 140px;
+}
+.dailyServices__name {
+    font-size: 20px;
+    font-weight: 600;
+    color: $bgColor2;
+    margin-bottom: 10px;
+}
+.dailyServices__dscr {
+    font-size: 14px;
+    line-height: 20px;
+}
+.dailyServices__wrapper2 {
+    margin-top: 50px;
+    display: flex;
+    
+}
+.dailyServices__left {
+    background-repeat: 5px 0 0 5px;
+    background-color: $bgColor;
+    font-size: 27px;
+    padding: 10px 10px 10px 20px;
+}
+.dailyServices__btn {
+    @include btn;
+    background-color: $bgColor2;
+    color: #fff;
+    &:hover {
+        color: $bgColor;
+        background-color: $bgColor2;
+    }
+}
