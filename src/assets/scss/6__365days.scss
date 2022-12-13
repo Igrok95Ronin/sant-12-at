@@ -1,0 +1,16 @@
+.days365 {
+    background-color: #f9f9f9;
+    padding-top: $paddingTop;
+}
+.days365__box {
+}
+.days365__title {
+    @include title;
+}
+.days365__txt {
+    line-height: 24px;
+    margin-bottom: 15px;
+    span{
+        font-weight: 700;
+    }
+}
