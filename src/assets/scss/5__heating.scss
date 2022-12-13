@@ -1,0 +1,105 @@
+.heating {
+    padding-top: $paddingTop;
+}
+.heating__box {
+}
+.heating__title {
+    @include title;
+}
+.heating__txt {
+    line-height: 20px;
+    margin-bottom: 60px;
+}
+.heating__wrapper {
+    color: #fff;
+    display: grid;
+    grid-template-columns: 1.4fr .6fr;
+    gap: 20px;
+}
+.heating__left {
+    padding: 35px;
+    background: url(../img/Klempner_Installateur_Regensburg_HERO_3.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 5px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    &::before {
+        content: '';
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        background-color: #173051;
+        top: 0;
+        left: 0;
+        opacity: .8;
+        border-radius: 5px;
+    }
+}
+.heating__miniTitle {
+    position: relative;
+    font-size: 34px;
+}
+.heating__dscr {
+    position: relative;
+    line-height: 24px;
+}
+.heating__right {
+    background-color: #e3e3e3;
+    padding: 38px 30px 30px;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    min-height: 290px;
+    position: relative;
+    &::before {
+        content: '';
+        position: absolute;
+        background: url(../img/icons8-24-hours-support-58.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        width: 110px;
+        height: 80px;
+        top: 38px;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+}
+.heating__minititle2 {
+    color: $bgColor2;
+    font-size: 24px;
+    text-align: center;
+}
+.heating__dscr2 {
+    color: #222222;
+    line-height: 24px;
+    text-align: center;
+}
+.heating__inner {
+    background-color: $bgColor;
+    padding: 25px 30px 30px 140px;
+    margin-top: 20px;
+    border-radius: 5px;
+    position: relative;
+    &::before{
+        content: '';
+        position: absolute;
+        width: 80px;
+        height: 80px;
+        background: url(../img/icons8-быстрая-доставка-64.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        left: 30px;
+    }
+
+}
+.heating__miniTitle3 {
+    font-size: 22px;
+}
+.heating__dscr3 {
+    font-size: 14px;
+    line-height: 20px;
+}
