@@ -1,0 +1,49 @@
+.advantages {
+    padding-top: $paddingTop;
+}
+.advantages__box {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+}
+.advantages__imgWrap {
+}
+.advantages__img {
+    max-width: 100%;
+}
+.advantages__inner {
+}
+.advantages__title {
+    @include title;
+}
+.advantages__txt {
+    font-size: 14px;
+    line-height: 24px;
+    margin-bottom: 20px;
+}
+.advantages__ul {
+    padding-left: 30px;
+    margin-bottom: 30px;
+
+}
+.advantages__li {
+    line-height: 24px;
+    margin-bottom: 5px;
+    position: relative;
+    &::before {
+        content: '✔';
+        position: absolute;
+        font-size: 20px;
+        left: -30px;
+    }
+}
+.advantages__btn {
+    @include btn;
+    background-color: #fff;
+    border: 3px solid $bgColor;
+    color: $bgColor2;
+    &:hover {
+        background-color: $bgColor;
+        color: $bgColor2;
+    }
+}

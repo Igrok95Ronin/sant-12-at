@@ -1,0 +1,29 @@
+.serviceTwo {
+    background-color: #f9f9f9;
+    padding-top: $paddingTop;
+    padding-bottom: $paddingTop;
+}
+.serviceTwo__box {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 50px;
+}
+.serviceTwo__inner {
+    text-align: center;
+}
+.serviceTwo__img {
+    width: 68px;
+    height: 68px;
+    margin-bottom: 10px;
+}
+.serviceTwo__title {
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 1.3em;
+    color: $bgColor2;
+    margin-bottom: 10px;
+}
+.serviceTwo__dscr {
+    font-size: 14px;
+    line-height: 20px;
+}
